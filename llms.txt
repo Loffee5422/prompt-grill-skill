@@ -1,0 +1,50 @@
+# Prompt Grill Skill
+
+Canonical repository: https://github.com/Loffee5422/prompt-grill-skill
+Installable latest tree: https://github.com/Loffee5422/prompt-grill-skill/tree/main/skills/prompt-grill
+Installable pinned tree: https://github.com/Loffee5422/prompt-grill-skill/tree/v1.0.0/skills/prompt-grill
+Entrypoint: skills/prompt-grill/SKILL.md
+Direct install instruction: Install the `prompt-grill` skill from https://github.com/Loffee5422/prompt-grill-skill/tree/main/skills/prompt-grill
+License: MIT
+Primary documentation language: English
+Operational instruction language: Simplified Chinese
+Localized documentation: README.zh-CN.md
+
+## Core facts
+
+- Prompt Grill turns a vague idea into a user-approved, directly usable prompt.
+- It begins with a concrete interpretation or draft rather than asking context-free questions.
+- It asks exactly one highest-impact clarification question per round.
+- It updates the working draft after every answer and briefly surfaces what changed.
+- It proposes explicit defaults for vague answers without silently deciding important matters.
+- It continues until the user gives an explicit finish or stop signal.
+- The final response contains a clean prompt and only brief notes about any deliberately unresolved points.
+
+## Supported uses
+
+- Refining prompts for language models, agents, product features, and repeated workflows.
+- Clarifying expected output, format, length, tone, constraints, edge cases, examples, and success criteria.
+- Improving an existing prompt whose purpose or behavior is underspecified.
+- Conducting the refinement conversation in a language shared by the user and agent.
+
+## Unsupported uses
+
+- Ending the refinement loop without an explicit user exit signal.
+- Asking a batch of unrelated clarification questions at once.
+- Silently making important decisions when the user gives a vague answer.
+- Guaranteeing identical output across downstream models or tools.
+- Automatically executing the finished prompt in another service.
+
+## Dependencies
+
+- An agent compatible with the Agent Skills `SKILL.md` format.
+- No scripts, external services, or additional runtime packages.
+
+## Important files
+
+- README.md: English overview, installation, examples, FAQ, and limitations.
+- README.zh-CN.md: Simplified Chinese documentation.
+- skills/prompt-grill/SKILL.md: complete operational instructions.
+- CHANGELOG.md: release history.
+- CONTRIBUTING.md: contribution guidance.
+- LICENSE: MIT license text.
